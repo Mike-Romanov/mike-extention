@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "HttpOnly Cookies Access",
+  "version": "1.0",
+  "permissions": [
+    "cookies",
+    "tabs",
+    "windows",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {         
+      "16": "icon.png"
+    },
+    "default_title": "teest",
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
