@@ -7,14 +7,24 @@
     "tabs",
     "windows",
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
   "action": {
     "default_icon": {         
-      "16": "icon.png"
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon128.png",
+      "128": "icon128.png"
     },
     "default_title": "teest",
     "default_popup": "popup.html"
